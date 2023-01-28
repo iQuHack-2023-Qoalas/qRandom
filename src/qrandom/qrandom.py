@@ -1,14 +1,21 @@
-"""
-This module utilizes quantum computers 
-to produce truly random numbers
-"""
+#Function name: randint
+#Parameters: start (int), stop(int)
+#Return: integer 
+#Description: returns an integer between start and stop+1
+def randint(start, stop):
+    seed = 0.5      #this will be a GET call to flask server, getting random seed between 0 and 1 
 
+    pass
 
-# this function returns a random integer
-def randint():
-    return 2
+#Function name: randrange 
+#Parameters: start (int), stop(int), step(int)
+#Return: integer 
+#Description: returns an integer between start and stop, incrementing by step
+def randrange(start,stop, step=1):
+    pass
 
-
-# this function returns a random integer between x (inclusive) and y (exclusive)
-def randrange(x, y):
+#Function name: randchoice 
+#Parameters: user_list []
+#Return: element of user_list
+def randchoice(user_list):
     pass
