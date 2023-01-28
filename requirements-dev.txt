@@ -3,6 +3,7 @@ black
 pytest
 setuptools
 build
+mindsdb==22.2.1.0
 wheel
 packaging
 -rrequirements.txt
