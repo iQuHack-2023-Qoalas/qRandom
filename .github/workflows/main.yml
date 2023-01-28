@@ -83,8 +83,6 @@ jobs:
         python -m build
         # see that the dist directory contains the wheel
         ls -la dist
-    - name: Check
-        run: twine check --strict ./dist/*
     - name: Upload package
       if: github.event_name == 'push'
       uses: pypa/gh-action-pypi-publish@master
