@@ -85,8 +85,6 @@ jobs:
         ls -la dist
     - name: Upload package
       if: github.event_name == 'push'
-      uses: actions/upload-artifact@v3
+      uses: pypa/gh-action-pypi-publish@release/v1 #uses: actions/upload-artifact@v3
       with:
-        name: qRandom
-        path: dist/
         password: ${{ secrets.TEST_PYPI_API_TOKEN }}
