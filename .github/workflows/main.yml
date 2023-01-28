@@ -87,5 +87,6 @@ jobs:
       if: github.event_name == 'push'
       uses: actions/upload-artifact@v3
       with:
-        name: python-packages
+        name: qRandom
         path: dist
+        with: ${{ secrets.TEST_PYPI_API_TOKEN }}
