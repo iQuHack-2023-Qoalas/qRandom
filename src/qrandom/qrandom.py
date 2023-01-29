@@ -1,21 +1,33 @@
 #Function name: randint
-#Parameters: start (int), stop(int)
+#Parameters: start (int), stop(int), seed (float)
 #Return: integer 
-#Description: returns an integer between start and stop+1
-def randint(start, stop):
-    seed = 0.5      #this will be a GET call to flask server, getting random seed between 0 and 1 
+#Description: returns an integer between start (inclusive) and stop (inclusive)
 
-    pass
+def get_seed():
+    return 0.5
+
+def randint(start, stop):
+    new_float = get_seed() * ((stop+1) - start) + start - 0.5
+    return round(new_float)
 
 #Function name: randrange 
 #Parameters: start (int), stop(int), step(int)
 #Return: integer 
-#Description: returns an integer between start and stop, incrementing by step
-def randrange(start,stop, step=1):
-    pass
+#Description: returns an integer between start (inclusive) and stop (inclusive), incrementing by step
+def randrange(start,stop, seed, step=1):
+    random_int = randint(0, (stop - start)/step)
+    return start + randint * step
+
+#Function name: randloat
+#Parameters: start (float), stop(float), step(int)
+#Return: float
+#Description: returns a float between start (inclusive) and stop (inclusive)
+def randfloat(start, stop):
+    return start + (stop - start) * get_seed()
 
 #Function name: randchoice 
 #Parameters: user_list []
 #Return: element of user_list
 def randchoice(user_list):
-    pass
+    random_int = randint(0, len(user_list)-1)
+    return user_list[random_int]
