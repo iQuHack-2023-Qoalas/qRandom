@@ -62,9 +62,10 @@ Returns: A random element of user_list
 
 # Distribution Options
 ## 0 = normal
-
+To extract the random numbers from a normal distribution (centred at 0, variance = 1)
 ## 1 = uniform 
-
-## 2 = lognormal 
-
-## 3 = porterthomas
+To extract the random numbers from a uniform distribution
+## 2 = porterthomas 
+To extract the random numbers from a Porter-Thomas distribution
+## 3 = deeprandom
+To fully take advantage of the quantum circuit, creating a circuit that exploit statistical propertier of dual-unitary circuits to generate a number extracted uniformly from the Haar distribution (approximated according to the amount of resources requested to the QPU)
