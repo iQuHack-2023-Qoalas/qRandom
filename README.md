@@ -1,4 +1,4 @@
-![Image](https://mcusercontent.com/6310a52cdfd4835b6f5b53169/images/4f8f6f7c-33ea-283d-4596-5613b5545064.png)
+![Image](https://mcusercontent.com/6310a52cdfd4835b6f5b53169/images/a1f0bb87-9152-a233-d7b5-e2e75a93dc97.png)
 [![License](https://img.shields.io/github/license/Qiskit/qiskit.svg?)](https://opensource.org/licenses/Apache-2.0)
 <!-- ![Test and Build Status](https://github.com/hannahyelle/qoalas/actions/workflows/main.yml/badge.svg?branch=master) -->
 

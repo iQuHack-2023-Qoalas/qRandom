@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qoalarandom"
-version = "1.0.0"
+version = "1.0.1"
 authors = [{ name="Alessandro Summer", email="summera@tcd.ie" },
            { name="Hannah Yelle", email="hannah.yelle@maine.edu" },
            { name="Leonard Logaric", email="logaricl@tcd.ie" },
