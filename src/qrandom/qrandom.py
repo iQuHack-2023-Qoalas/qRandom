@@ -14,9 +14,9 @@ def randint(start, stop):
 #Parameters: start (int), stop(int), step(int)
 #Return: integer 
 #Description: returns an integer between start (inclusive) and stop (inclusive), incrementing by step
-def randrange(start,stop, seed, step=1):
+def randrange(start,stop, step=1):
     random_int = randint(0, (stop - start)/step)
-    return start + randint * step
+    return start + random_int * step
 
 #Function name: randloat
 #Parameters: start (float), stop(float), step(int)
