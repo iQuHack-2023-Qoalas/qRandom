@@ -1,6 +1,12 @@
+import requests
+URL = 'http://ec2-54-165-62-12.compute-1.amazonaws.com'
+
+
 def get_seed(distribution):
     #pass distribution with the GET request to determine the queue random number comes from
-    return 0.5
+    num = requests.get(URL)
+
+    return float(num.text)
 
 #Function name: randint
 #Parameters: start (int), stop(int), seed (float)
