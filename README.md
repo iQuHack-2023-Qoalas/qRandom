@@ -1,8 +1,70 @@
-# qRandom
-
-Produced by Qoalas @ iQuHack 2023
-
+![Image](https://mcusercontent.com/6310a52cdfd4835b6f5b53169/images/4f8f6f7c-33ea-283d-4596-5613b5545064.png)
 [![License](https://img.shields.io/github/license/Qiskit/qiskit.svg?)](https://opensource.org/licenses/Apache-2.0)
 <!-- ![Test and Build Status](https://github.com/hannahyelle/qoalas/actions/workflows/main.yml/badge.svg?branch=master) -->
 
-readme change
+**QoalaRandom** is a quantum powered random number generator. 
+
+Produced by Qoalas @ iQuHack 2023
+
+# Installation
+
+The best way of installing `qoalarandom` is by using `pip`
+
+```bash
+$ pip install -i https://test.pypi.org/simple/ qoalarandom
+```
+
+# Using Qoala Random 
+
+## randint(start, stop, distribution=1)
+
+Parameters:
+- start (int)
+- stop (int)
+- distribution (int, default=1 (uniform distribution))
+
+    distribution is the index of the distribution type desired. See more in distribution options. 
+
+Returns: A random integer between start and stop 
+
+## randrange(start, stop, step=1, distribution=1)
+
+Parameters: 
+- start (int)
+- stop (int)
+- step (int, default=1)
+- distribution (int, default=1 (uniform distribution))
+
+    distribution is the index of the distribution type desired. See more in distribution options.
+
+Returns: A random integer between start and stop incrementing by step
+
+## randfloat(start, stop, distribution=1)
+
+Parameters: 
+- start (int)
+- stop (int)
+- distribution (int, default=1 (uniform distribution))
+
+    distribution is the index of the distribution type desired. See more in distribution options.
+
+Returns: A random float between start and stop 
+
+## randchoice(user_list, distribution=1)
+
+Parameters:
+- user_list (list)
+- distribution (int, default=1 (uniform distribution))
+
+    distribution is the index of the distribution type desired. See more in distribution options.
+
+Returns: A random element of user_list
+
+# Distribution Options
+## 0 = normal
+
+## 1 = uniform 
+
+## 2 = lognormal 
+
+## 3 = porterthomas
